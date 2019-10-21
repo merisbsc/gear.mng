@@ -1,0 +1,22 @@
+body {
+    font-family: "Airbnb Cereal App", sans-serif;
+    background: #6bbcff;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.login {
+    height: 2%;
+    margin: 1%;
+    text-align: right;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+}
+
+#back {
+    position: absolute;
+    left: 1%;
+}

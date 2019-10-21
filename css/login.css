@@ -1,0 +1,49 @@
+#main {
+    width: 100%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+ul {
+    list-style: none;
+    margin-right: 3%;
+}
+
+li {
+    margin-top: 25px;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    background: white;
+    width: 10vw;
+    height: 30px;
+    border: none;
+}
+
+.gear_options {
+    background: white;
+    width: 10vw;
+    height: 30px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+form{
+    /*border: red 1px solid;*/
+    width:12%;
+    margin:3% auto;
+    padding: 5px;
+}
+
+#new {
+    font-size: 80%;
+}

@@ -1,0 +1,17 @@
+#main {
+    width: 100%;
+    text-align: center;
+    margin-top: 12%;
+    font-size: 130%;
+}
+
+ul {
+    list-style: none;
+    margin-right: 3%;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
