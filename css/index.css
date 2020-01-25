@@ -15,3 +15,12 @@ a {
     color: white;
     text-decoration: none;
 }
+
+li {
+    transition: 0.3s transform;
+
+}
+
+li:hover {
+    transform: scale(1.2);
+}

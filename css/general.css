@@ -3,6 +3,7 @@ body {
     background: #6bbcff;
     color: white;
     text-shadow: 2px 2px 3px black;
+    overflow: hidden;
 }
 
 .login {
@@ -16,7 +17,19 @@ body {
     text-decoration: none;
 }
 
-#back {
+#logo {
     position: absolute;
-    left: 1%;
+    top: 30px;
+    left: 3%;
+    font-weight: bold;
+    transform: scale(1.6);
+}
+
+#login_icon {
+    transform: scale(0.6);
+    transition: 0.3s transform;
+}
+
+#login_icon:hover {
+    transform: scale(0.8);
 }

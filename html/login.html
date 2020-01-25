@@ -5,14 +5,19 @@
     <title>gear.mng</title>
     <link rel="stylesheet" type="text/css" href="../css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <script src="../js/login.js"></script>
 </head>
 <body>
+<div class="login">
+    <a href="../index.html" id="logo">gear.mng</a>
+</div>
 <div id="main" >
     <h1>login</h1>
     <form>
         <input type="text" class="gear_options" id="username" placeholder="username">
         <input type="password" class="gear_options" id="password" placeholder="password">
-        <input type="submit" value="login" class="gear_options">
+        <input type="submit" value="login" class="gear_options" onclick="alert('nua a test')">
+
         <a href="#" id="new">create a new account</a>
     </form>
 </div>

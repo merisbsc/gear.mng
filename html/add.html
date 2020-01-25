@@ -5,18 +5,19 @@
     <title>gear.mng</title>
     <link rel="stylesheet" type="text/css" href="../css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../css/add.css"/>
+    <script src="../js/add.js"></script>
 </head>
 <body>
 <div class="login">
-    <a href="login.html" id="login">login</a>
-    <a href="../index.html" id="back">back</a>
+    <a href="login.html" id="login"><img src="../img/login.png" id="login_icon" alt="login"></a>
+    <a href="../index.html" id="logo">gear.mng</a>
 </div>
 
 <div id="main" >
     <h1>rent gear</h1>
 
     <form id="rentGear">
-        <select class="gear_options">
+        <select class="gear_options" id="category">
             <option disabled selected>category</option>
             <option class="categoryOption">camera</option>
             <option class="categoryOption">lens</option>
@@ -24,11 +25,12 @@
             <option class="categoryOption">other</option>
         </select>
 
-        <input type="text" class="gear_options" placeholder="brand">
+        <input type="text" class="gear_options" id="brand" placeholder="brand">
 
-        <input type="text" class="gear_options" placeholder="type"/>
+        <input type="text" class="gear_options" id="type" placeholder="type"/>
 
-        <input type="submit" value="add" class="gear_options">
+        <input type="submit" value="add" class="gear_options" onclick="addGear()">
+
     </form>
 
 
