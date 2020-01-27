@@ -3,10 +3,14 @@ function addGear() {
     let category = document.getElementById("category").value;
     let brand = document.getElementById("brand").value;
     let type = document.getElementById("type").value;
-    alert(category + ";" + brand + ";" + type);
-    request.open('GET', '../php/add.php?category=' + category + '&brand=' + brand + '&type=' + type);
-    request.onload = checkData;
-    request.send(null);
+    if (sessionStorage.getItem("loggedIn")) {
+        alert(category + ";" + brand + ";" + type);
+        request.open('GET', '../php/add.php?category=' + category + '&brand=' + brand + '&type=' + type);
+        request.onload = checkData;
+        request.send(null);
+    } else {
+        alert("sign in to add gear");
+    }
 }
 
 function checkData() {

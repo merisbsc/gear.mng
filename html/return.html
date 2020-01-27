@@ -5,8 +5,10 @@
     <title>gear.mng</title>
     <link rel="stylesheet" type="text/css" href="../css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../css/return.css"/>
+    <script src="../js/return.js"></script>
 </head>
-<body>
+<body onload="return_init()">
+
 
 <div class="login">
     <a href="login.html"><img src="../img/login.png" id="login_icon"></a>
@@ -16,13 +18,11 @@
 <div id="main" >
     <h1>return gear</h1>
     <h4>click on the gear your want to return</h4>
-    <ul>
-        <li>Canon EOS 6D</li>
-        <li>Canon EF 50mm f/1,8 STM</li>
-        <li>Glidecam HD-1000</li>
+    <ul id="return_list" >
     </ul>
 
-    <input type="submit" value="return">
+    <input type="submit" value="return" onclick="return_items()">
+
 </div>
 </body>
 </html>

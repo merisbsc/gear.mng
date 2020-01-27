@@ -12,10 +12,28 @@ function login() {
 
 function check() {
     if (req.status === 200) {
-        //alert(req.responseText);
-        sessionStorage.setItem("username", req.responseText);
-        alert("eingeloggt als " + sessionStorage.getItem("username"));
-        window.location = "../index.html";
-        document.getElementById("user_name").innerHTML = sessionStorage.getItem("username");
+        if (req.responseText !== "null") {
+            //alert(req.responseText);
+            sessionStorage.setItem("username", req.responseText);
+            alert("eingeloggt als " + sessionStorage.getItem("username"));
+            sessionStorage.setItem("loggedIn", true);
+            window.location = "../index.html";
+            document.getElementById("user_name").innerHTML = sessionStorage.getItem("username");
+        } else {
+            alert("Einloggen nicht möglich");
+        }
     }
+}
+
+function loginOrOf() {
+    if (sessionStorage.getItem("loggedIn")) {
+        window.location = "./html/logout.html";
+    } else {
+        window.location = "./html/login.html";
+    }
+}
+
+function logout() {
+    sessionStorage.setItem("username", null);
+    sessionStorage.setItem("loggedIn", false);
 }

@@ -63,11 +63,15 @@ function rent_gear() {
     let date_from = document.getElementById("date_from").value;
     let date_to = document.getElementById("date_to").value;
     let username = sessionStorage.getItem("username");
-    alert(username);
-    //alert(category + ";" + brand + ";" + type + ";" + date_from + ";" + date_to);
-    request.open('GET', '../php/rent.php?user=' + username + '&category=' + category + '&brand=' + brand + '&type=' + type + "&dateFrom=" + date_from + "&dateTo=" + date_to);
-    request.onload = checkData;
-    request.send(null);
+    if (sessionStorage.getItem("loggedIn")) {
+        alert(username);
+        //alert(category + ";" + brand + ";" + type + ";" + date_from + ";" + date_to);
+        request.open('GET', '../php/rent.php?user=' + username + '&category=' + category + '&brand=' + brand + '&type=' + type + "&dateFrom=" + date_from + "&dateTo=" + date_to);
+        request.onload = checkData;
+        request.send(null);
+    } else {
+        alert("log in to rent gear");
+    }
 }
 
 function checkData() {

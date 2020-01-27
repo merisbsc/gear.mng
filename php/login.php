@@ -16,7 +16,7 @@ foreach ($accounts as $account){
 if ($loginRight) {
     echo $username;
 } else {
-    echo "einloggen geht ned";
+    echo "null";
     //TODO: wenn einloggen ned geht
 }
 //echo "des einloggn geht mit " . $username . ";" . $password;
