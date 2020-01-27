@@ -17,34 +17,23 @@
     <h1>rent gear</h1>
 
     <form id="rentGear">
-        <select class="gear_options">
+        <select class="gear_options" id="category_select">
             <option disabled selected>category</option>
-            <option class="categoryOption">camera</option>
-            <option class="categoryOption">lens</option>
-            <option class="categoryOption">stablizer</option>
-            <option class="categoryOption">other</option>
         </select>
 
-        <select class="gear_options">
+        <select class="gear_options" id="brand_select">
             <option disabled selected>brand</option>
-            <option>canon</option>
-            <option>sony</option>
-            <option>nikon</option>
-            <option>fujifilm</option>
         </select>
 
-        <select class="gear_options">
+        <select class="gear_options" id="type_select">
             <option disabled selected>type</option>
-            <option>a7s</option>
-            <option>a6300</option>
-            <option>a7III</option>
         </select>
         from
-        <input type="date" class="gear_options">
+        <input type="date" class="gear_options" id="date_from">
         to:
-        <input type="date" class="gear_options">
+        <input type="date" class="gear_options" id="date_to">
 
-        <input type="submit" value="rent" class="gear_options">
+        <input type="submit" value="rent" class="gear_options" onclick="rent_gear()">
     </form>
 
 
