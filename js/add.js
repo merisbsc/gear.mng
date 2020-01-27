@@ -5,14 +5,12 @@ function addGear() {
     let type = document.getElementById("type").value;
     alert(category + ";" + brand + ";" + type);
     request.open('GET', '../php/add.php?category=' + category + '&brand=' + brand + '&type=' + type);
-    request.onreadystatechange = checkData;
+    request.onload = checkData;
     request.send(null);
 }
 
 function checkData() {
-    alert(request.readyState);
-    alert(request.status);
-    if (request.readyState === 4 && request.status === 200) {
+    if (request.status === 200) {
         alert(request.responseText);
     }
 }

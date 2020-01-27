@@ -11,6 +11,7 @@ function createAcc() {
 
 function check() {
     if (req.status === 200) {
-        alert(req.responseText);
+        window.location = req.responseText;
     }
+
 }
