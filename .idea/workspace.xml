@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbde631d-eca5-4427-a88f-c94ad8159727" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/db_repository.php" afterDir="false" />
+    <list default="true" id="dbde631d-eca5-4427-a88f-c94ad8159727" name="Default Changelist" comment="login in datenbank gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/rent.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/gear.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db/gear.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/logins.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db/logins.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/rental.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db/rental.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gear-mng-first.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/rent.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/rent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/return.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/return.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rent_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/rent_init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/rent.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/rent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/createAcc.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/createAcc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +25,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="8ebcef95-def4-45b1-b93f-27c761c4dced" name="localhost" />
@@ -87,7 +75,8 @@
       <workItem from="1585309275667" duration="1912000" />
       <workItem from="1585330097927" duration="2761000" />
       <workItem from="1585570673926" duration="220000" />
-      <workItem from="1587449410495" duration="3740000" />
+      <workItem from="1587449410495" duration="5130000" />
+      <workItem from="1587480318463" duration="2303000" />
     </task>
     <task id="LOCAL-00001" summary="nix funktioniert in meim lebn">
       <created>1579984612984</created>
@@ -124,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580153558265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="login in datenbank gemacht">
+      <created>1587453777691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587453777691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,18 +132,72 @@
     <MESSAGE value="einloggen + gear hinzufügen geht, todos san drinn" />
     <MESSAGE value="funktioniert: einloggen, acc erstellen, gear hinzufügen, ausborgen.&#10;&#10;to do: user anzeigen, returnen" />
     <MESSAGE value="fehler beheben (username anzeigen, geliehene gear in liste anzeigen, abhängigkeiten)&#10;&#10;sonst scho gonz ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="fehler beheben (username anzeigen, geliehene gear in liste anzeigen, abhängigkeiten)&#10;&#10;sonst scho gonz ok" />
+    <MESSAGE value="login in datenbank gemacht" />
+    <option name="LAST_COMMIT_MESSAGE" value="login in datenbank gemacht" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1580153553387">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="336" y="361" key="#SQL_Dialects" timestamp="1587489049516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587489049516" />
+    <state x="491" y="0" key="CommitChangelistDialog2" timestamp="1587454247827">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1366.728/-1280.-208.1280.680@0.0.1536.824" timestamp="1579984608871" />
     <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580153553387" />
+    <state x="491" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587454247827" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1583825216523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583825216523" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.2.center" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.2.left" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
+    <state width="1877" height="347" key="GridCell.Tab.2.right" timestamp="1587456096884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587456096884" />
     <state x="604" y="337" key="NewPhpFileDialog" timestamp="1585310651788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -157,10 +207,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587451688828" />
-    <state x="0" y="0" key="Vcs.Push.Dialog.v2" timestamp="1580153560001">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="0" y="0" key="Vcs.Push.Dialog.v2" timestamp="1587454211315">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580153560001" />
+    <state x="0" y="0" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587454211315" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1580146769803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -169,16 +220,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728/-1280.-208.1280.680@0.0.1536.824" timestamp="1579981932748" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/php/login.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
