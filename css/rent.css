@@ -2,31 +2,41 @@
     width: 100%;
     text-align: center;
     height:auto;
-    margin:6% auto;
+    margin: 6% auto;
 }
 
 .gear_options {
     background: white;
-    width: 10vw;
-    height: 30px;
+    width: 14vw;
     border: none;
     text-align: center;
     padding: 5px;
-    margin: 5px;
+    margin: 1vh 0;
 }
 
 form{
-    /*border: red 1px solid;*/
-    width:12%;
-    margin:3% auto;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3% auto;
     padding: 5px;
 }
 
+input[type="submit"] {
+    margin-top: 2vh;
+}
 input[type="date"] {
-    width: 150px;
+    width: 13vw;
 }
 
-input[type="submit"] {
-    margin-top: 15px;
+#message_box {
+    display: none;
+    background: red;
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    left: 35vw;
+    top: 40vh;
 }
 

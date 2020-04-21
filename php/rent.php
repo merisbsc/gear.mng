@@ -7,5 +7,5 @@ $dateFrom = $_GET["dateFrom"];
 $dateTo = $_GET["dateTo"];
 
 file_put_contents("../db/rental.csv", $user . ";" . $category . ";" . $brand . ";" . $type . ";" . $dateFrom . ";" . $dateTo . "&", FILE_APPEND);
-
+echo "ausborgen geht";
 //echo $category . ";" . $brand . ";" . $type . ";" . $dateFrom . ";" . $dateTo . "&";

@@ -33,8 +33,13 @@
         to:
         <input type="date" class="gear_options" id="date_to">
 
-        <input type="submit" value="rent" class="gear_options" onclick="rent_gear()">
+        <input type="submit" value="rent" class="gear_options" onclick="rent_gear(); showMessage()">
     </form>
+
+    <div id="message_box">
+
+        <input type="button" value="OK" onclick="unseeMessage()">
+    </div>
 
 
 </div>

@@ -19,7 +19,9 @@ function rent_init() {
                 }
                 categories =Array.from(new Set(categories));
                 brands = Array.from(new Set(brands));
+                console.log(brands);
                 types = Array.from(new Set(types));
+                console.log(types);
 
                 let category_select = document.getElementById("category_select");
                 let brand_select = document.getElementById("brand_select");
@@ -53,6 +55,7 @@ function rent_init() {
         }
     };
     req.send(null);
+
 }
 
 let request = new XMLHttpRequest();
@@ -64,18 +67,31 @@ function rent_gear() {
     let date_to = document.getElementById("date_to").value;
     let username = sessionStorage.getItem("username");
     if (sessionStorage.getItem("loggedIn")) {
-        alert(username);
         //alert(category + ";" + brand + ";" + type + ";" + date_from + ";" + date_to);
         request.open('GET', '../php/rent.php?user=' + username + '&category=' + category + '&brand=' + brand + '&type=' + type + "&dateFrom=" + date_from + "&dateTo=" + date_to);
         request.onload = checkData;
         request.send(null);
+
     } else {
         alert("log in to rent gear");
     }
-}
 
+
+
+}
 function checkData() {
     if (request.status === 200) {
         alert(request.responseText);
     }
+}
+//
+// function showMessage() {
+//     console.log("message");
+//     let message = document.getElementById("message_box");
+//     message.style.display = "inline";
+// }
+
+function unseeMessage() {
+    let message = document.getElementById("message_box");
+    message.style.display = "none";
 }
