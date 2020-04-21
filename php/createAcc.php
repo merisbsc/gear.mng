@@ -16,12 +16,5 @@ $stmt = $conn->prepare("INSERT INTO `user` (`username`, `password`) VALUES (?, M
 $stmt->bind_param("ss", $username, $password);
 $stmt->execute();
 
-
-if ($_res = $stmt->get_result()) {
-    if ($_res->num_rows > 0) {
-        echo "../html/login.html";
-    } else {
-        echo "null";
-    }
-}
+echo $username;
 

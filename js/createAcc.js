@@ -7,11 +7,12 @@ function createAcc() {
     req.open("GET", url);
     req.onload = check;
     req.send(null);
-}
+    window.location = "../html/login.html";
 
+}
 function check() {
     if (req.status === 200) {
-        window.location = req.responseText;
+        alert("User " + req.responseText + " created!");
     }
 
 }
