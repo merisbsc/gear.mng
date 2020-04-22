@@ -12,9 +12,10 @@ $name = $_GET["name"];
 
 $password = "gear" . $password;
 
-$stmt = $conn->prepare("INSERT INTO `user` (`username`, `password`) VALUES (?, MD5(?))");
-$stmt->bind_param("ss", $username, $password);
+$stmt = $conn->prepare("INSERT INTO `user` (`name`, `username`, `password`) VALUES (?, ?, MD5(?))");
+$stmt->bind_param("sss", $name,$username, $password);
 $stmt->execute();
 
 echo $username;
 
+$conn->close();

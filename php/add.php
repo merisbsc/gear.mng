@@ -5,18 +5,18 @@ $category = $_GET["category"];
 $brand = $_GET["brand"];
 $type = $_GET["type"];
 
-session_start();
+//$stmt = "INSERT INTO gear(category_id, brand, type) VALUES (" . $category . ", " . $brand . "," . $type . ")";
 
-$insertStatement = `insert into gear (brand, name) values ($brand, $type)`;
-if ($_res = $conn->query($testStatement)) {
-    echo "yo is gonga";
+
+$stmt = "INSERT INTO gear (category_id, brand, name) VALUES ('$category', '$brand', '$type')";
+
+
+if ($_res = $conn->query($stmt)) {
+    echo "hod gefunkt";
+} else{
+    echo "hod ned gefunkt";
 }
 
-$testStatement = "select * from gear";
-$gear_table = $conn->query($testStatement);
-
-//echo $gear_table[1];
-
-//file_put_contents("../db/gear.csv", $category . ";" . $brand . ";" . $type . "&", FILE_APPEND);
+$conn->close();
 
 ?>
