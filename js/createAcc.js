@@ -1,9 +1,10 @@
 let req = new XMLHttpRequest();
 function createAcc() {
     let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let name = document.getElementById("name").value;
-    let url = "../php/createAcc.php?username=" + username + "&password=" + password + "&name=" + name;
+    let url = "../php/createAcc.php?username=" + username + "&email=" + email + "&password=" + password + "&name=" + name;
     req.open("GET", url);
     req.onload = check;
     req.send(null);
