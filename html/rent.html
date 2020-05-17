@@ -7,13 +7,13 @@
     <link rel="stylesheet" type="text/css" href="../css/rent.css"/>
     <script src="../js/rent_init.js"></script>
 </head>
-<body onload="rent_init()">
+<body>
 <div class="login">
     <a href="login.html"><img src="../img/login.png" id="login_icon"></a>
     <a href="../index.html" id="logo">gear.mng</a>
 </div>
 
-<div id="main" >
+<div id="main">
     <h1>rent gear</h1>
 
     <form id="rentGear">
@@ -33,7 +33,7 @@
         to:
         <input type="date" class="gear_options" id="date_to">
 
-        <input type="submit" value="rent" class="gear_options" onclick="rent_gear(); showMessage()">
+        <input type="submit" value="rent" class="gear_options" onclick="rent_gear();">
     </form>
 
     <div id="message_box">

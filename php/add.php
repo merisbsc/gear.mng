@@ -10,12 +10,7 @@ $type = $_GET["type"];
 
 $stmt = "INSERT INTO gear (category_id, brand, name) VALUES ('$category', '$brand', '$type')";
 
-
-if ($_res = $conn->query($stmt)) {
-    echo "hod gefunkt";
-} else{
-    echo "hod ned gefunkt";
-}
+echo "succesfully added your gear";
 
 $conn->close();
 
