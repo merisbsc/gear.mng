@@ -7,7 +7,7 @@ function addGear() {
         request.open('GET', '../php/add.php?category=' + category + '&brand=' + brand + '&type=' + type);
         request.onload = checkData;
         request.send(null);
-        alert("added gear!");
+        alert("added gear")
     } else {
         alert("sign in to add gear");
     }
