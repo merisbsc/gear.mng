@@ -18,17 +18,9 @@ function return_items() {
 }
 
 function return_init() {
-    let rentedItems = [];
-    req.open("GET", "../db/rental.csv", false);
+    req.open("GET", "../php/return.php?rental_id=", false);
     req.onreadystatechange = function () {
-        let all = req.responseText;
-        let rentals = all.split("&");
-        for (let i = 0; i < rentals.length; i++) {
-            let rental_data = rentals[i].split(";");
-            if (rental_data[0] === sessionStorage.getItem("username")) {
-                rentedItems.push(rental_data[2] + " " + rental_data[3]);
-            }
-        }
+
     };
     req.send(null);
 

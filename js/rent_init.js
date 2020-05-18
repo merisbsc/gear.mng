@@ -69,6 +69,8 @@ window.addEventListener('load', () => {
 });
 
 let request = new XMLHttpRequest();
+let gear_req = new XMLHttpRequest();
+let gear_id;
 function rent_gear() {
     let category = document.getElementById("category_select").value;
     let brand = document.getElementById("brand_select").value;
@@ -76,20 +78,37 @@ function rent_gear() {
     let date_from = document.getElementById("date_from").value;
     let date_to = document.getElementById("date_to").value;
     let username = sessionStorage.getItem("username");
+    let categories = ["camera", "lens", "stabilizer", "other"];
+
     if (sessionStorage.getItem("loggedIn")) {
-        //alert(category + ";" + brand + ";" + type + ";" + date_from + ";" + date_to);
-        request.open('GET', '../php/rent.php?user=' + username + '&category=' + category + '&brand=' + brand + '&type=' + type + "&dateFrom=" + date_from + "&dateTo=" + date_to);
+        //TODO: gear_id selecten, rental inserten
+        gear_req.open('GET', '../php/get_gearid.php?category=' + (categories.indexOf(category) + 1) + '&brand=' + brand + '&type=' + type);
+        gear_req.onload = getGearID;
+        gear_req.send(null);
+
+
+        request.open('GET', '../php/rent.php?user=' + username + '&gear_id=' + gear_id + "&dateFrom=" + date_from + "&dateTo=" + date_to);
         request.onload = checkData;
         request.send(null);
-
     } else {
         alert("log in to rent gear");
     }
 
 
 }
+
+function getGearID() {
+    if (gear_req.status === 200) {
+        // gear_id = responseText
+       //let response = JSON.parse(this.responseText);
+        alert(gear_req.responseText);
+
+    }
+}
+
 function checkData() {
     if (request.status === 200) {
+
         alert(request.responseText);
     }
 }
